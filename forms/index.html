@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Car List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Car List</h1>
+    <form>
+      <div class="form-group">
+        <label for="model">Model:</label>
+        <input type="text" class="form-control" id="model" required>
+      </div>
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" class="form-control" id="year" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" class="form-control" id="price" required>
+      </div>
+      <div class="form-group">
+        <label for="color">Color:</label>
+        <input type="text" class="form-control" id="color" required>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="customs">
+        <label class="form-check-label" for="customs">Customs cleared</label>
+      </div>
+      <button type="submit" id="add-car" class="btn btn-primary">Add car</button>
+      <button type="submit" id="clear-cars" class="btn btn-primary">Clear cars</button>
+    </form>
+    <hr>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Year</th>
+          <th>Price</th>
+          <th>Color</th>
+          <th>Customs</th>
+        </tr>
+      </thead>
+      <tbody id="car-list">
+      </tbody>
+    </table>
+    <div>
+      <div class="form-group">
+        <label for="search-input">Search:</label>
+        <input type="text" class="form-control" id="search-input">
+      </div>
+      <button type="button" class="btn btn-primary" id="search-button">Search</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
